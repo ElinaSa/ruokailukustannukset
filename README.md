@@ -1,0 +1,2 @@
+# ruokailukustannukset
+Ensimmäinen Python-harjoitus
