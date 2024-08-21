@@ -1,0 +1,22 @@
+#Tee ohjelma, joka arvioi käyttäjän keskimääräisiä ruokailukustannuksia.  
+#Ohjelma kysyy, kuinka monta kertaa viikossa käy Unicafessa ja Unicafe-lounaan hinnan sekä viikon muiden ruokaostosten hinnan. 
+#Näiden tietojen perusteella ohjelma laskee käyttäjän keskimääräiset ruokamenot sekä viikossa että yhtenä päivänä. 
+#Ohjelman tulee toimia seuraavasti:
+#Esimerkkitulostus
+#Montako kertaa viikossa syöt Unicafessa? 4 Unicafe-lounaan hinta? 2.5 Paljonko käytät viikossa ruokaostoksiin? 28.5
+#Kustannukset keskimäärin: Päivässä 5.5 euroa, viikossa 38.5 euroa
+
+#Luetaan arvot
+kerrat = int (input('Montako kertaa viikossa syöt Unicafessa? '))
+hinta = float (input('Unicafe-lounaan hinta?'))
+ruokaostokset =float (input('Paljonko käytät viikossa ruokaostoksiin?'))
+
+#Lasketaan viikkokustannukset
+viikkokustannus = (kerrat * hinta + ruokaostokset)
+
+#Lasketaan keskimääräinen kustannus päivässä
+paivakustannus = (kerrat * hinta + ruokaostokset) / 7
+
+#Printataan tulokset
+print('Kustannukset viikossa: '(viikkokustannus) ' euroa.')
+print('Keskimääräinen päiväkustannus: ' (paivakustannus) 'euroa.')
